@@ -1,13 +1,146 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(40, 44, 52, 0.47);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 800px;
+}
+
+.border-black {
+  border: 1px solid black;
+}
+
+.counter-component {
+  padding: 10px;
+  background-color: grey;
+  margin: 5px;
+}
+
+.btn-counter {
+  padding: 4px 8px;
+  border: none;
+  background-color: purple;
+  color: white;
+  font-size: 20px;
+  margin: 5px;
+}
+
+.btn-counter:hover {
+  background-color: rgba(215, 0, 215, 0.76);
+}
+
+.btn-counter:active {
+  background-color: rgba(128, 0, 128, 0.76);
+}
+
+.counter-value {
+  text-align: center;
+  font-size: 28px;
+}
+
+.text-input-value {
+  outline: none;
+  height: 30px;
+  font-size: 20px;
+}
+
+.text-input {
+  padding: 5px;
+}
+
+.text-value {
+  height: 30px;
+  text-align: center;
+  font-size: 28px;
+}
+
+.post {
+  margin-top: 5px;
+  display: flex;
+  width: 800px;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px solid green;
+  background-color: rgba(240, 244, 253, 0.62);
+  padding: 10px;
+}
+
+.post__buttons {
+  display: flex;
+}
+
+select {
+  outline: none;
+  padding: 4px 8px;
+  font-size: 18px;
+}
+
+.page__wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+}
+
+.page {
+  padding: 10px;
+  border: 1px solid teal;
+  /*background: transparent;*/
+  cursor: pointer;
+}
+
+.page__current {
+  border: 2px solid orange;
+  font-weight: bold;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: lightgreen;
+}
+
+.navbar__links {
+  margin-left: auto;
+}
+
+.navbar__links a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 16px;
+  background-color: transparent;
+  border: 1px solid teal;
+  color: teal;
+  margin-right: 10px;
+}
+
+.error-page {
+  margin-top: 100px;
+  color: red;
+  font-size: 54px;
 }
